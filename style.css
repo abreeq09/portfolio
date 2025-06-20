@@ -1,0 +1,39 @@
+@font-face {
+    font-family:"sf-pro-display";
+    font-style: normal;
+    font-weight: 600;
+    src: url("./fonts/sf_pro.OTF") format("opentype");
+}
+
+@font-face {
+    font-family:"helvetica";
+    font-style: normal;
+    font-weight: 400;
+    src: url("./fonts/Helvetica/Helvetica.ttf") format("TrueType");
+}
+
+@keyframes scroll-horizontal {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+@import "tailwindcss";
+
+@theme {
+    --color-light: #032829;
+    --color-headline: #76DDCF;
+    --color-fav: linear-gradient(to right, #000D0D, #002122);
+    --font-sf_pro: "sf-pro-display", sans-serif;
+    --font-helvetica: "Helvetica", sans-serif;
+
+    --animate-scroll-horizontal:  scroll-horizontal 20s linear infinite;
+
+   
+
+
+}
